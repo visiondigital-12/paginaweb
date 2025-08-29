@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa - Ubicación</title>
+  <link rel="stylesheet" href="styleubicacion.css">
+</head>
+<body>
+  <header>
+    <h1>ESCOGE TU UBICACIÓN</h1>
+    <button id="abrirModal" class="btn-ubicacion">Seleccionar ubicación</button>
+  </header>
+
+  <!-- Modal -->
+  <div id="modalUbicacion" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <h2>Elige tu ubicación</h2>
+
+      <!-- Selección de país -->
+      <label for="paises">País:</label>
+      <select id="paises">
+        <option value="">-- Selecciona un país --</option>
+        <option value="argentina">🇦🇷 Argentina</option>
+        <option value="bolivia">🇧🇴 Bolivia</option>
+        <option value="brasil">🇧🇷 Brasil</option>
+        <option value="chile">🇨🇱 Chile</option>
+        <option value="colombia">🇨🇴 Colombia</option>
+        <option value="ecuador">🇪🇨 Ecuador</option>
+        <option value="guyana">🇬🇾 Guyana</option>
+        <option value="paraguay">🇵🇾 Paraguay</option>
+        <option value="peru">🇵🇪 Perú</option>
+        <option value="surinam">🇸🇷 Surinam</option>
+        <option value="uruguay">🇺🇾 Uruguay</option>
+        <option value="venezuela">🇻🇪 Venezuela</option>
+      </select>
+
+      <!-- Selección de ciudad -->
+      <div id="ciudad-container" style="display:none; margin-top:15px;">
+        <label for="ciudades">Ciudad:</label>
+        <select id="ciudades">
+          <option value="">-- Selecciona una ciudad --</option>
+        </select>
+      </div>
+
+      <button id="confirmarUbicacion" class="btn-confirmar">Confirmar ubicación</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa - Ubicación</title>
+  <link rel="stylesheet" href="styleubicacion.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .btn-ubicacion {
+      background: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .modal-contenido {
+      background: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+    }
+    .cerrar {
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    #mapa {
+      margin: 30px auto;
+      text-align: center;
+    }
+    iframe {
+      border: 0;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Mapa -->
+  <div id="mapa">
+    <h2>Mapa de nuestra tienda</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.6119659077737!2d-77.04279368578913!3d-12.046373145020263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c5297e5c2d%3A0xc5eddf2f5c2d4e91!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1693244548701!5m2!1ses!2spe" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <script>
+    // Abrir modal
+    document.getElementById("abrirModal").onclick = function() {
+      document.getElementById("modalUbicacion").style.display = "block";
+    }
+
+    // Cerrar modal
+    document.getElementById("cerrarModal").onclick = function() {
+      document.getElementById("modalUbicacion").style.display = "none";
+    }
+
+    // Cerrar modal al hacer clic fuera
+    window.onclick = function(event) {
+      if (event.target == document.getElementById("modalUbicacion")) {
+        document.getElementById("modalUbicacion").style.display = "none";
+      }
+    }
+  </script>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa - Ubicación</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .btn-ubicacion {
+      background: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .modal-contenido {
+      background: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+    .cerrar {
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+
+  <!-- Modal -->
+  <div id="modalUbicacion" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <h2>Elige tu ubicación</h2>
+
+      <!-- Selección de país -->
+      <label for="paises">País:</label>
+      <select id="paises">
+        <option value="">-- Selecciona un país --</option>
+        <option value="peru">🇵🇪 Perú</option>
+        <option value="argentina">🇦🇷 Argentina</option>
+        <option value="colombia">🇨🇴 Colombia</option>
+        <option value="chile">🇨🇱 Chile</option>
+      </select>
+
+      <!-- Selección de ciudad -->
+      <div id="ciudad-container" style="display:none; margin-top:15px;">
+        <label for="ciudades">Ciudad:</label>
+        <select id="ciudades">
+          <option value="">-- Selecciona una ciudad --</option>
+        </select>
+      </div>
+
+      <button id="confirmarUbicacion" class="btn-confirmar">Confirmar ubicación</button>
+    </div>
+  </div>
+
+  <script>
+    // Diccionario con URLs de Google Maps (redirección)
+    const ciudadesPorPais = {
+      peru: {
+        Chachapoyas: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.120783082962!2d-77.86908968573062!3d-6.229736495484556",
+        Arequipa: "https://www.google.com/maps/place/Arequipa,+Perú/"
+      },
+      argentina: {
+        BuenosAires: "https://www.google.com/maps/place/Buenos+Aires,+Argentina/",
+        Cordoba: "https://www.google.com/maps/place/Córdoba,+Argentina/"
+      },
+      colombia: {
+        Bogota: "https://www.google.com/maps/place/Bogotá,+Colombia/",
+        Medellin: "https://www.google.com/maps/place/Medellín,+Antioquia,+Colombia/"
+      },
+      chile: {
+        Santiago: "https://www.google.com/maps/place/Santiago,+Chile/",
+        Valparaiso: "https://www.google.com/maps/place/Valparaíso,+Chile/"
+      }
+    };
+
+    const paisesSelect = document.getElementById("paises");
+    const ciudadesSelect = document.getElementById("ciudades");
+    const ciudadContainer = document.getElementById("ciudad-container");
+    const modal = document.getElementById("modalUbicacion");
+
+    // Mostrar ciudades al seleccionar un país
+    paisesSelect.addEventListener("change", function() {
+      const pais = this.value;
+      ciudadesSelect.innerHTML = '<option value="">-- Selecciona una ciudad --</option>';
+      if (ciudadesPorPais[pais]) {
+        ciudadContainer.style.display = "block";
+        for (const ciudad in ciudadesPorPais[pais]) {
+          const option = document.createElement("option");
+          option.value = ciudad;
+          option.textContent = ciudad;
+          ciudadesSelect.appendChild(option);
+        }
+      } else {
+        ciudadContainer.style.display = "none";
+      }
+    });
+
+    // Confirmar ubicación -> redirigir a Google Maps
+    document.getElementById("confirmarUbicacion").onclick = function() {
+      const pais = paisesSelect.value;
+      const ciudad = ciudadesSelect.value;
+      if (pais && ciudad && ciudadesPorPais[pais][ciudad]) {
+        window.location.href = ciudadesPorPais[pais][ciudad]; // 🔥 Redirección
+      } else {
+        alert("Por favor selecciona un país y una ciudad.");
+      }
+    };
+
+    // Abrir modal
+    document.getElementById("abrirModal").onclick = function() {
+      modal.style.display = "block";
+    };
+
+    // Cerrar modal
+    document.getElementById("cerrarModal").onclick = function() {
+      modal.style.display = "none";
+    };
+
+    // Cerrar modal al hacer clic fuera
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
+
+
+
+  
+</body>
+</html>
+</body>
+</html>

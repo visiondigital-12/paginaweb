@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(#087c6c, #00f2fe)
+}
+.container{
+    width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+}
+.superior{
+  background: linear-gradient(#087c6c, #0cafb8) ;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    width: 150px;
+    padding: 35px;
+
+}
+.nombre-de-la-tienda{
+    font-size: 40px;
+    margin: 0px;
+    text-align: center;
+    color:white ;
+}
+/*estilos para menu de opciones*/ 
+/* === Encabezado moderno === */
+.superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #087c6c;
+  padding: 15px 30px;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+}
+
+.encabezado .logo {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.nombre-de-la-tienda {
+  font-size: 28px;
+  color: white;
+  margin: 0;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  width: 250px;
+}
+
+.search-bar button {
+  background: #065c50;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.search-bar button:hover {
+  background: #01362d;
+}
+
+/* Menú de íconos */
+.menu-iconos {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-iconos a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.menu-iconos a:hover {
+  color: #d1ffeb;
+  transform: scale(1.2);
+}
+.menu{
+    float: left;
+    padding: 50px;
+}
+.opciones li{
+    float: left;
+    list-style:none ;
+    
+}
+.opciones li a{
+   color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.opciones li a:hover{
+    background-color: #065c50 ;
+}
+
+.Titulo{
+ text-align: center;   
+}
+
+.contenido-principal{
+width: 100%;
+margin: 0;
+padding: 0;
+}
+.banner img{
+width: 100%;
+height: auto;
+display: block;
+}
+.presentacion{
+background-color:#038573f1  ;
+text-align: center;
+padding: 30px 20px;
+}
+.presentacion h2{
+color: #004d40;
+font-size: 30px;
+margin-bottom: 15px;
+color: white;
+}
+.presentacion p{
+color: #333;
+font-size: 16px;
+line-height: 1.5;
+color: white;
+}
+.producto {
+display: flex;
+justify-content: space-around;
+padding: 30px 20px;
+background-color: #e0f2f1;
+flex-wrap: wrap;
+}
+.producto {
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 8px;
+width: 250px;
+margin: 10px;
+padding: 20px;
+text-align: center;
+}
+.producto h3{
+    color: #00695c;
+    margin-bottom: 10px;
+}
+.producto p{
+    color: #444;
+}
+/*estilos para el cuerpo*/
+.cuerpo{
+    overflow: hidden;
+}
+.caja{
+    float: left;
+    width: 380px;
+    margin: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.subtitulo{
+    background-color: #038573f1;
+    overflow: hidden;
+
+}
+.productos{
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+.efecto:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.contenido{
+    padding: 20px;
+    text-align: justify;
+}
+.boton{
+    padding: 15px 20px;
+    margin: 20px 0;
+    color: white;
+    background-color:#004d40 ;
+    border-radius: 5px;
+}
+.boton:hover{
+    background-color: #01362d;
+    cursor: pointer;
+
+}
+/*estilos del footer*/
+.footer {
+  background: #06775f;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: white; /* dorado estilo temu */
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: justify;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color:#08a784;
+}
+
+.redes a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.redes a:hover {
+  color: #08a784;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+/* Menú lateral */
+.menu-lateral {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0; /* lo abrimos desde la derecha */
+  background-color: #087c6c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.menu-lateral h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-lateral a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+  background-color: #065c50;
+}
+
+/* Botón cerrar */
+.menu-lateral .cerrar {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.producto-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.producto {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  border-color: #087c6c;
+}
+
+

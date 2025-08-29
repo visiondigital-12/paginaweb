@@ -1,0 +1,96 @@
+/* Estilo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00e9ca, #9df1e6);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Caja de formularios */
+.form-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Botones toggle */
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  color: #555;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.toggle-btn.active {
+  color: #0b473f;
+  border-bottom: 2px solid #10d3b9;
+}
+
+/* Formularios */
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active {
+  display: flex;
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.form input {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0c968a;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0a473a;
+}

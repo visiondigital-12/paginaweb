@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería de Productos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    .galeria {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .descripcion {
+      font-size: 16px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .precio {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    .footer {
+  background: linear-gradient(135deg, #087c6c, #0cafb8); 
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+  </style>
+</head>
+<body>
+
+  <h1>Catálogo de Productos</h1>
+
+  <section class="galeria">
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/open/2024-08-28/1724831505249-4a76bd01df6c4bcd9c19777dfa30f90e-goods.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Producto 1">
+      <div class="card-body">
+        <p class="descripcion">Sudadera con capucha ligera para hombre.</p>
+        <p class="precio">$24.99</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/f3acc7b5-a485-4ccd-8d53-ca2c69afb37b.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 2">
+      <div class="card-body">
+        <p class="descripcion">Sudadera casual para hombre con estampado de ángel.</p>
+        <p class="precio">$29.50</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/ab2783a8-685a-4d28-9ce6-bb6da7c9c3d7.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 3">
+      <div class="card-body">
+        <p class="descripcion">Suéter con Capucha de Estampado Geométrico para Hombre.</p>
+        <p class="precio">$18.90</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/92aa1d54-8111-4fb1-830e-1291540dd635.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 4">
+      <div class="card-body">
+        <p class="descripcion">Sudadera con capucha estilo callejero para hombre Los Ángeles 1991.</p>
+        <p class="precio">$31.00</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/4622d1b8-f598-444a-811d-2f033bf0d48a.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 5">
+      <div class="card-body">
+        <p class="descripcion">Chaqueta con Capucha para Hombre.</p>
+        <p class="precio">$15.75</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/5b8c5d9f-5d4c-481c-8889-6c201ee5a41f.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 6">
+      <div class="card-body">
+        <p class="descripcion">Sudadera con capucha para hombre con estampado de galaxia.</p>
+        <p class="precio">$22.80</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/69368dfb-e35c-47cb-8dcb-95e0be0a5cec.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 7">
+      <div class="card-body">
+        <p class="descripcion">Chaqueta con Capucha Casual para Mujer.</p>
+        <p class="precio">$34.20</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/aa2c4bf0-4bab-4373-969a-accc9dcaafdd.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 8">
+      <div class="card-body">
+        <p class="descripcion">sudadera minimalista con estampado de gato.</p>
+        <p class="precio">$26.40</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/open/4b21d2f2eeed4969bfcee5520032ecd0-goods.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Producto 9">
+      <div class="card-body">
+        <p class="descripcion">Sudadera con capucha con cremallera y estampado de estilo gótico.</p>
+        <p class="precio">$39.99</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.kwcdn.com/product/open/9e3f905954174c049a284f7c39079979-goods.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Producto 10">
+      <div class="card-body">
+        <p class="descripcion">Sudadera con capucha con gráfico de la ciudad de los ángeles de EE. UU.</p>
+        <p class="precio">$45.60</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="https://img.kwcdn.com/product/fancy/92aa1d54-8111-4fb1-830e-1291540dd635.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto 4">
+      <div class="card-body">
+        <p class="descripcion">Chaqueta con capucha con cremallera.</p>
+        <p class="precio">$36.00</p>
+      </div>
+    </div>
+        <div class="card">
+      <img src="https://img.kwcdn.com/product/open/15797ea72770401c81e808cb31e7a3d2-goods.jpeg?imageView2/2/w/800/q/70/format/webp" alt="Producto 4">
+      <div class="card-body">
+        <p class="descripcion">Chaqueta con capucha con cremallera.</p>
+        <p class="precio">$41.00</p>
+      </div>
+    </div>
+
+  </section>
+
+    <footer class="footer">
+    <p>&copy; 2025 Tienda D'Mendoza - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
+
+</body>
+</html>

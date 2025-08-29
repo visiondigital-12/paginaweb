@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa - Login & Registro</title>
+  <link rel="stylesheet" href="estilos usuario.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Tarjeta de formularios -->
+    <div class="form-box">
+      <!-- Botones para cambiar entre Login y Registro -->
+      <div class="button-box">
+        <button id="btn-login" class="toggle-btn active">Iniciar Sesión</button>
+        <button id="btn-register" class="toggle-btn">Registrarse</button>
+      </div>
+
+      <!-- Formulario de Iniciar Sesión -->
+      <form id="login-form" class="form active">
+        <h2>Bienvenido</h2>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit" class="submit-btn">Entrar</button>
+      </form>
+
+      <!-- Formulario de Registro -->
+      <form id="register-form" class="form">
+        <h2>Crear cuenta</h2>
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="password" placeholder="Contraseña" required>
+        <input type="password" placeholder="Confirmar contraseña" required>
+        <button type="submit" class="submit-btn">Registrarse</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="usuario.js"></script>
+</body>
+</html>
